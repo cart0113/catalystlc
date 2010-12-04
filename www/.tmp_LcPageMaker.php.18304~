@@ -33,10 +33,8 @@ class LcPageMaker extends OxPage {
 	function makePageDom(){
 		$this->addBrowserIcon("./css/catalyst.ico");
 		if($_SERVER['SERVER_NAME'] == "www.catalystlc.org"){
-			//$this->addCssFile("http://disk.catalystlc.org/public/clc/css/catalystlc.css");
-			//$fastUrl = "http://disk.catalystlc.org/public/clc/";
-			$this->addCssFile($_SERVER['SERVER_NAME'] . "css/catalystlc.css");
-			$fastUrl = $_SERVER['SERVER_NAME'];
+			$this->addCssFile("http://disk.catalystlc.org/public/clc/css/catalystlc.css");
+			$fastUrl = "http://disk.catalystlc.org/public/clc/";
 		}
 		else {
 			$this->addCssFile($this->getHttp('main') . '/css/catalystlc.css');
