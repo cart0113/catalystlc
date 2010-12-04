@@ -1,0 +1,11 @@
+<!-- This div is the element we are animating -->
+<div id="urgent"><h1>Red Alert!</h1>The Web server is under attack!</div>
+<!-- This is the animation script for the element -->
+<script>  
+var e = document.getElementById("urgent");         // Get the element object
+var colors = ["white", "yellow", "orange", "red"]  // Colors to cycle through
+var nextColor = 0;                                 // Position in the cycle
+// Evaluate the following expression every 500 milliseconds.  
+// This animates the background color of the DIV element.
+setInterval("e.style.backgroundColor=colors[nextColor++%colors.length];", 500);
+</script>

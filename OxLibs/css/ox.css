@@ -1,0 +1,307 @@
+/***************************************
+**** MAIN PAGE RELATED STYLES **********
+****************************************/
+#body_main {
+	position: relative;
+}
+div {
+    text-align: left; 
+    vertical-align: top;
+    padding: 0px; 
+}
+
+table {
+	vertical-align: top; 
+    border-collapse: collapse;
+	padding: 0px; 
+	margin: 0;
+	border: 0; 
+}
+table.wide_table {
+	width: 100%; 
+}
+
+td {
+	vertical-align: top; 
+	padding: 0px; 
+	margin: 0; 
+	border: 0; 
+}
+
+img {
+	margin: 0 auto 0 0; 
+	padding: 0px; 
+	border: 0px; 
+}
+
+a {
+	text-decoration: none; 
+	color: #0000FF;  
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+a.link_no_ref{
+	color: #AAAAAA; 
+}
+
+input { 
+    background-color: #FFFFFF;
+}
+
+ol {
+	padding-left: 20px;
+}
+
+ul {
+	padding-left: 20px;
+}
+
+li {
+	padding-left: 5px; 
+	padding-bottom: 15px;
+}
+
+form {
+	padding: 0px; 
+}
+
+/***************************************
+**** General Layout       	  **********
+****************************************/
+table.ox_split_A {
+	width: 100%; 
+}
+td.ox_split_A_0 {
+}
+td.ox_split_A_1 {
+	text-align: right; 
+}
+
+/***************************************
+****************************************
+****************************************
+****************************************
+**** Form / Button GUI Related Styles  *
+****************************************
+****************************************
+****************************************
+****************************************/
+div.OxForm_medium_w {
+	width: 600px;
+}
+div.OxForm_full_w {
+	width: 98%; 
+}
+div.ox_gui_form {
+	width: 100%;
+	/*max-width: 500px;*/
+}
+/*******BLOCKS*********/
+div.OxFormBlock_container {
+	padding-top: 5px;
+}
+div.OxFormBlock{
+	background-color: #FFFFFF;
+	padding: 5px;
+	padding-bottom: 6px;
+}
+table.OxFormBlock_title{
+	padding: 0px;
+	border-collapse: collapse;
+}
+td.OxFormBlock_text {
+	font-size: 15px; 
+	color: #555555;
+	font-weight: bold; 
+	padding-bottom: 2px;
+}
+div.ox_gui_required {
+	display: inline; 
+	color: #FF3333; 
+	font-size: 13px;
+	text-align: left;
+	margin-top: 8px;
+	margin-left: -2px;
+}
+div.OxFormInput_TextUnder{
+	font-size: 12px;
+	color: #666666;
+	padding-top: 3px;
+	padding-bottom: 5px; 
+}
+/*******INPUTS*********/
+input {
+	width: 99%; 
+	padding: 0.5px;
+}
+select {
+	width: 100%; 
+	padding: 0.5px;
+}
+textarea {
+	width: 99%; 
+	height: 100px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+
+
+/***************************************
+****************************************
+****************************************
+****************************************
+**** HOVER REFS						   *
+****************************************
+****************************************
+****************************************
+****************************************/
+div.ox_blue_ref_c {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+a.ox_blue_ref {
+	text-decoration: none;
+}
+a.ox_blue_ref:hover {
+	text-decoration: none;
+}
+
+div.ox_blue_ref {
+	padding: 10px;
+}
+div.ox_blue_ref_on {
+	padding: 10px;
+	background-color: #F5F5FF;
+}
+div.ox_blue_ref_t1 {
+	font-size: 16px;
+	color: #AAAAFF; 
+	padding-bottom: 5px; 
+}
+div.ox_blue_ref_t2 {
+	color: #AAAAAA; 
+	font-size: 14px;
+}
+div.ox_blue_ref_t3 {
+	padding-top: 10px;
+	font-size: 13px; 
+	text-align: right;
+}
+
+/***************************************
+****************************************
+****************************************
+****************************************
+**** OXINFO WINDOW					   *
+****************************************
+****************************************
+****************************************
+****************************************/
+div.iMain {
+	position: absolute;
+ 	z-index: 103;
+}
+table.fT {
+	background-color: #CCCCCC;
+}
+div.fH {
+	width: 8px;
+	background-color: #FF0000;
+}
+div.iCenter {
+	position: relative; 
+	min-height: 250px; 
+	min-width: 350px;
+	background-color: #EEEEEE;
+	padding: 20px;
+	border-top: 4px solid #CCCCCC;
+	border-bottom: 4px solid #CCCCCC;
+	padding: 4px; 
+}
+div.iHeader {
+	padding-bottom: 2px;
+	border-bottom: 2px solid #DDDDDD; 
+}
+div.iText {
+	position: relative;
+	width: 100%; 
+	padding-top: 10px;	
+	padding-left: 5px;	
+	padding-right: 5px;	
+	color: #333333;
+}
+div.iTextHide {
+	visibility: hidden;
+	position: fixed;
+	top: -3000px;
+	left: -3000px;
+}
+
+td.ox_info_window_header{
+	font-size: 14px;
+	color: #999999;
+	padding: 3px;
+}
+div.ox_info_window_header {
+	padding: 10px;
+}
+div.ox_info_window_header:hover {
+	background-color: #DDDDFF;
+}
+div.ox_info_window_header_on {
+	padding: 10px;
+	background-color: #DDDDFF;
+}
+
+option.ioption {
+	font-style: italic;
+	color: #777777;
+}
+
+/*
+	OxForm Inputs
+*/
+td.input_radio {
+	padding-left: 5px; 
+}
+
+/*
+	OX_THICK -- REPURPOSED FROM THICKBOX http://jquery.com/demo/thickbox/
+*/
+
+div#OX_THICK_BOX {
+  position: absolute;
+  width: 100%; 
+  height: 100%; 
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  background-color: #CCCCDD;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+}
+
+div#OX_THICK_TOP {
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	z-index: 101; 
+	width: 100%; 
+	text-align: center; 
+}
+
+div#OX_THICK_WINDOW {
+	margin: 0 auto;
+	border: 4px solid #999999;
+	padding: 30px; 
+	background-color: #FFFFFF;
+	width: 950px;
+    z-index: 102;
+	text-align: left; 
+}
+
+
+

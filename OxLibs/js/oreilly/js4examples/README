@@ -1,0 +1,32 @@
+			     Examples From
+	    JavaScript: The Definitive Guide, Fourth Edition
+
+This directory contains the source code for all the numbered examples in
+the 4th edition of JavaScript: The Definitive Guide.  The file name
+indicates the chapter and example number, and the extension indicates
+the example type.  An example with a .html extension contains HTML tags
+and can be run and displayed in a web browser.  An example with a .js
+extension is a file that contains JavaScript code only, without HTML
+<script> tags, and cannot be usefully loaded into a browser.  There is
+also one example (22-1) that has a ".java" extension because it contains
+Java code instead of JavaScript code.
+
+A few of the .js examples are substantial enough that you may find them
+useful in your own HTML pages.  In these cases, there is a copy of the
+numbered example file that is given a more descriptive name.  For
+example, Drag.js is a copy of 19-2.js.  When an example is given a name
+like this, it has typically been referred to with that name in the book.
+
+These files were all created using a text editor on a Linux system, so
+they use the Unix line terminator \n.  If you find that the lines all
+run together when you view them on another operating system (such as
+Windows), you should use a text editor or file viewer that recognizes
+the Unix line termination convention.  (The Windows "Notepad"
+application typically cannot display the file correctly, for example.)
+
+Legal matters: these files were created by David Flanagan, and are
+Copyright (c) 2001 by David Flanagan.  You may use, study, modify, and
+distribute them for any purpose.  Please note that these examples are
+provided "as-is" and come with no warranty of any kind.
+
+      David Flanagan

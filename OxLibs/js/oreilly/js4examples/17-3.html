@@ -1,0 +1,18 @@
+<head><title>Reverse</title></head>
+<script>
+function reverse(n) {          // Reverse the order of the children of Node n
+    var kids = n.childNodes;   // Get the list of children
+    var numkids = kids.length; // Figure out how many there are
+    for(var i = numkids-1; i >= 0; i--) {  // Loop through them backwards
+        var c = n.removeChild(kids[i]);    // Remove a child
+        n.appendChild(c);                  // Put it back at its new position
+    }
+}
+</script>
+</head>
+<body>
+<p>paragraph #1<p>paragraph #2<p>paragraph #3  <!-- A sample document -->
+<p>                                    <!-- A button to call reverse()-->
+<button onclick="reverse(document.body);"
+>Click Me to Reverse</button>
+</body>

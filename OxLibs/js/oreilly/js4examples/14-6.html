@@ -1,0 +1,40 @@
+/*
+ * FILE: listanchors.js
+ * The function listanchors() is passed a document as its argument and
+ * opens a new window to serve as a "navigation window" for that
+ * document. The new window displays a list of all anchors in the document.
+ * Clicking on any anchor in the list causes the document to scroll to 
+ * the position of that anchor.  A document should not call this
+ * function on itself until it is fully parsed, or at least until all
+ * the anchors in it are parsed.
+ */
+function listanchors(d) {
+    // Open the new window.
+    var newwin = window.open("", "navwin", 
+                             "menubar=yes,scrollbars=yes,resizable=yes," +
+                             "width=600,height=300");
+
+    // Give it a title.
+    newwin.document.writeln("<h1>Navigation Window:<br>" +
+                            document.title + "</h1>");
+    // List all anchors.
+    for(var i = 0; i < d.anchors.length; i++) {
+        // For each anchor object, determine the text to display. 
+        // First, try to get the text between <A> and </A> using a 
+        // browser-dependent property. If none, use the name instead.
+        var a = d.anchors[i];
+        var text = null;
+        if (a.text) text = a.text;                          // Netscape 4
+        else if (a.innerText) text = a.innerText;           // IE 4+
+        if ((text == null) || (text == '')) text = a.name;  // Default
+
+        // Now output that text as a link. Note the use of the location
+        // property of the original window.
+        newwin.document.write('<a href="#' + a.name + '"' +
+                              ' onclick="opener.location.hash=\'' + a.name + 
+                              '\'; return false;">'); 
+        newwin.document.write(text);
+        newwin.document.writeln('</a><br>');
+    }
+    newwin.document.close();   // Never forget to close the document!
+}

@@ -1,0 +1,49 @@
+<script>
+/**
+ * This function is intended for use in a mousedown event handler of an object
+ * within a Layer.  The first argument must be a Layer object.  The second
+ * argument must be the Event object for the mousedown event.
+ **/
+function beginDrag(layerToDrag, event) {
+    // This nested function responds to mousemove events and moves the layer.
+    function moveHandler(event) {
+	// Move the element to the current mouse position, adjusted as
+	// necessary by the offset of the initial mouse click.
+	layerToDrag.moveTo(event.pageX - deltaX, event.pageY-deltaY);
+
+	// Don't take any default action, and don't propagate further.
+	return false;
+    }
+
+    // This nested function handles mouseup events.
+    // It stops capturing events, and de-register the handlers.
+    function upHandler(event) {
+	// Stop capturing and handling drag events
+	document.releaseEvents(Event.MOUSEMOVE | Event.MOUSEUP);
+	document.onmousemove = null;
+	document.onmouseup = null;
+
+	// Don't take any default action, and don't propagate further.
+	return false;
+    }
+
+    // Compute the distance between the upper left of the layer and and the
+    // mouse click. The moveHandler function below needs these values.
+    var deltaX = event.pageX - layerToDrag.left;
+    var deltaY = event.pageY - layerToDrag.top;
+
+    // Arrange to capture mousemove and mouseup events.
+    // Then arrange to handle them using the functions defined below.
+    document.captureEvents(Event.MOUSEMOVE | Event.MOUSEUP);
+    document.onmousemove = moveHandler;
+    document.onmouseup = upHandler;
+}
+</script>
+<!-- Here's how we might use beginDrag() in Netscape 4 -->
+<!-- Define a layer using CSS attributes -->
+<div id="div1" style="position:absolute; left:100px; top:100px;">
+<!-- Give the layer some content, and a mousedown event handler -->
+<img src="images/plus.gif" width="20" height="20"
+     onmousedown="if (event.modifiers & Event.SHIFT_MASK)
+                      beginDrag(window.document.div1, event);">
+</div>

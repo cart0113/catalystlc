@@ -1,0 +1,29 @@
+<script>
+// This function recursively looks at node n and its descendants, 
+// replacing all Text nodes with their uppercase equivalents.
+function uppercase(n) {
+    if (n.nodeType == 3 /*Node.TEXT_NODE*/) {
+        // If the node is a Text node, create a new Text node that
+        // holds the uppercase version of the node's text, and use the
+        // replaceChild() method of the parent node to replace the
+        // original node with the new uppercase node.
+        var newNode = document.createTextNode(n.data.toUpperCase());
+        var parent = n.parentNode;
+        parent.replaceChild(newNode, n);
+    }
+    else {
+        // If the node was not a Text node, loop through its children,
+        // and recursively call this function on each child.
+        var kids = n.childNodes;
+        for(var i = 0; i < kids.length; i++) uppercase(kids[i]);
+    }
+}
+</script>
+
+<!-- Here is some sample text.  Note that the p tags have id attributes -->
+<p id="p1">This <i>is</i> paragraph 1.</p>
+<p id="p2">This <i>is</i> paragraph 2.</p>
+
+<!-- Here is a button that invokes the uppercase() function defined above -->
+<!-- Note the call to Document.getElementById() to find the desired node -->
+<button onclick="uppercase(document.getElementById('p1'));">Click Me</button> 

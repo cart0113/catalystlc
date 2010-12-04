@@ -1,0 +1,33 @@
+<head>
+<script>
+// This function is passed a DOM Node object and checks to see if that node 
+// represents a string of text: i.e., if the node is a Text object.  If
+// so, it returns the length of the string.  If not, it recursively
+// calls itself on each of the children of the node and adds up the
+// total length of the text it finds.  Note that it enumerates the
+// children of a node using the firstChild and nextSibling properties.
+// Note that the function does not recurse when it finds a Text node
+// because Text nodes never have children.
+function countCharacters(n) {               // n is a Node 
+    if (n.nodeType == 3 /*Node.TEXT_NODE*/) // Check if n is a Text object
+        return n.length;                    // If so, return its length.
+    // Otherwise, n may have children whose characters we need to count
+    var numchars = 0;  // Used to hold total characters of the children
+    // Instead of using the childNodes property, this loop examines the
+    // children of n using the firstChild and nextSibling properties.
+    for(var m = n.firstChild; m != null; m = m.nextSibling) {
+	numchars += countCharacters(m); // Add up total characters found
+    }
+    return numchars;                    // Return total characters
+}
+</script>
+</head>
+<!-- 
+  The onload event handler is an example of how the countCharacters()
+  function might be used.  Note that we only want to count the
+  characters in the <body> of the document, so we pass document.body
+  to the function.
+-->
+<body onload="alert('Document length: ' + countCharacters(document.body))">
+This is a sample document.<p>How long is it?
+</body>

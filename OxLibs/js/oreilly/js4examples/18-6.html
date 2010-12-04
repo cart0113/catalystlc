@@ -1,0 +1,57 @@
+<!-- This is the dynamic element we will animate.  We wrap the h1 tag in a -->
+<!-- div because IE 4 won't move the h1 without a div or a span container. -->
+<div id="title" style="position:absolute"><h1>Hello</h1></div>
+
+<!-- This is the JavaScript code that performs the animation -->
+<script>
+// These variables set the parameters for our animation
+var id = "title";                  // Name of the element to animate
+var numFrames = 30;                // How many frames to display
+var interval = 100;                // How long to display each frame
+var x0 = 100, y0 = 100;            // The element's starting position
+var x1 = 500, y1 = 500;            // The element's ending position
+var dx = (x1 - x0)/(numFrames-1);  // Distance to move horizontally each frame
+var dy = (y1 - y0)/(numFrames-1);  // Distance to move vertically each frame
+var frameNum = 0;                  // Frame we are at now
+var element = null;                // The element to be animated
+
+// First, we find the element to be animated.  Use a DOM-compliant technique
+// if the browser supports it, otherwise fall back on browser-specific code.
+if (document.getElementById) {     // If this is a DOM-compliant browser
+    element = document.getElementById(id);  // Use the DOM method
+}
+else if (document.all) {           // Otherwise, if the IE API is supported
+    element = document.all[id];    // Use the all[] array to find the element
+}
+else if (document.layers) {        // Else if the Netscape API is supported
+    element = document.layers[id]; // Use the layers[] array to get the element
+}
+
+// If we found the element to animate using one of the techniques above,
+// start animating it by calling nextFrame() every interval milliseconds.
+if (element) {
+    var intervalId = setInterval("nextFrame()", interval);
+}
+
+// This function is called repeatedly to display each frame of the animation.
+// It moves the element using either the DOM API for setting CSS style
+// properties, or, if the browser does not support that API, it uses
+// the Netscape Layer API.
+function nextFrame() {
+    if (element.style) {
+        // If the browser supports it, move the element by setting CSS
+        // style properties.  Note the inclusion of the units string.
+        element.style.left = x0 + dx*frameNum + "px";
+        element.style.top = y0 + dy*frameNum + "px";
+    }
+    else {
+        // Otherwise, assume that element is a Layer, and move it by
+        // setting its properties.  We could also use element.moveTo().
+        element.left = x0 + dx*frameNum;
+        element.top = y0 + dy*frameNum;
+    }
+
+    // Increment the frame number, and stop if we've reached the end.
+    if (++frameNum >= numFrames) clearInterval(intervalId);
+}
+</script>

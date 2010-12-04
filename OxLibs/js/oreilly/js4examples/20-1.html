@@ -1,0 +1,19 @@
+<!-- Set a variable to determine what version of JavaScript we support. -->
+<!-- This technique can be extended to any number of language versions. -->
+<script language="JavaScript"> var _version = 1.0; </script>
+<script language="JavaScript1.1">  _version = 1.1; </script>
+<script language="JavaScript1.2">  _version = 1.2; </script>
+
+<!-- Run this code on any JavaScript-enabled browser.  -->
+<!-- If the version is not high enough, display a message. -->
+<script language="JavaScript">
+  if (_version < 1.1) {
+    document.write('<hr><h1>This Page Requires JavaScript 1.1</h1>');
+    document.write('Your JavaScript 1.0 browser cannot run this page.<hr>');
+  }
+</script>
+
+<!-- Now run the actual program only on JavaScript 1.1 browsers. -->
+<script language="JavaScript1.1">
+    // The actual JavaScript 1.1 code goes here.
+</script>

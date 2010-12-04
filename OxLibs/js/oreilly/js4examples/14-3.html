@@ -1,0 +1,30 @@
+<!-- The image that will be animated. Give it a name for convenience. -->
+<img name="animation" src="images/0.gif">
+
+<script>
+// Create a bunch of off-screen images, and pre-fetch the "frames"
+// of the animation into them so that they're cached when we need them.
+var aniframes = new Array(10);
+for(var i = 0; i < 10; i++) {
+    aniframes[i] = new Image();                 // Create an off-screen image
+    aniframes[i].src = "images/" + i + ".gif";  // Tell it what URL to load.
+}
+
+var frame = 0;         // The frame counter: keeps track of current frame.
+var timeout_id = null; // Allows us to stop the animation with clearTimeout()
+
+// This function performs the animation.  Call it once to start.
+// Note that we refer to the on-screen image using its name attribute.
+function animate() {
+    document.animation.src = aniframes[frame].src; // Display the current frame
+    frame = (frame + 1)%10;                        // Update the frame counter
+    timeout_id = setTimeout("animate()", 250);     // Display next frame later.
+}
+</script>
+
+<form>  <!-- This form contains buttons to control the animation. -->
+  <input type="button" value="Start"
+	 onclick="if (timeout_id == null) animate();">
+  <input type="button" value="Stop" 
+	 onclick="if (timeout_id) clearTimeout(timeout_id); timeout_id=null;">
+</form>

@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>OxJs</title>
+		<style type="text/css">
+			table {
+				border-collapse: collapse;
+				padding: 0px;
+				margin: 0px;
+			}
+			td {
+				padding: 0px;
+				margin: 0px;
+			}
+			table.T {
+				background-color: #AAAAAA;
+			}
+			div.h {
+				width: 6px;
+				background-color: #FF0000;
+			}
+			div#BODY {
+				position: relative;
+			}
+			div#MAIN {
+				position: absolute;
+			}
+			div#CENTER{
+				min-height: 500px; 
+				background-color: #DDDDDD;
+				padding: 20px;
+				border-top: 4px solid #AAAAAA;
+				border-bottom: 4px solid #AAAAAA;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="BODY">
+			<div id="MAIN" >		
+				<table class="T">
+					<tr>
+						<td id="H1" onmouseover="help.hcon()" onmouseout="help.hcoff()" onmousedown="help.fDown(event, 0)"><div class="h"></div></td>
+						<td>
+							<div id="CENTER" onmousedown="help.fDown(event, 1)">  
+								THIS IS A HELP FILE.
+							</div>
+						</td>
+						<td id="H2" onmouseover="help.hcon()" onmouseout="help.hcoff()" onmousedown="help.fDown(event, 2)"><div class="h"></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+	
+		var fWin; 
+		function FWindow(left, top, width){
+			//members
+			this.outDiv = document.getElementById('MAIN');
+			this.inDiv = document.getElementById('CENTER');
+			this.h1 = document.getElementById('H1');
+			this.h2 = document.getElementById('H2');
+			this.left = left; 
+			this.top = top; 
+			this.width = width;
+			this.outDiv.style.left = this.left + 'px';
+			this.outDiv.style.top = this.top + 'px';
+			this.inDiv.style.width = this.width + 'px';
+			//methods
+			this.hcon = function hcon(){
+				document.body.style.cursor = 'col-resize';
+			}
+			this.hcoff = function hcoff(){
+				document.body.style.cursor = 'default';
+			}
+			this.fDown = function fDown(event, where){
+				this.where = where; 
+				this.downX = event.clientX;
+		    	this.downY = event.clientY;
+				if(where = 1){
+					document.body.style.cursor = 'move';
+				}
+				else {
+					document.body.style.cursor = 'col-resize';
+				}
+				document.addEventListener("mousemove", fMove, true);
+		   		document.addEventListener("mouseup", fUp, true);
+				event.stopPropagation();
+		   	 	event.preventDefault();
+				fWin = this;
+			}
+			function fMove(event){
+				var moveLeft = event.clientX - fWin.downX;
+				fWin.inDiv.style.backgroundColor = '#EEEEEE';
+				fWin.downX = event.clientX;
+				if(fWin.where == 1){
+					document.body.style.cursor = 'move';
+					var moveTop = event.clientY - fWin.downY;
+					fWin.downY = event.clientY;	
+					fWin.top = fWin.top + moveTop; 	
+					fWin.left = fWin.left + moveLeft; 
+					fWin.outDiv.style.top = fWin.top + 'px';
+					fWin.outDiv.style.left = fWin.left + 'px';
+				}
+				else {
+					document.body.style.cursor = 'col-resize';
+					if(fWin.where == 0){
+						fWin.left = fWin.left + moveLeft; 
+						fWin.outDiv.style.left = fWin.left + 'px';
+						fWin.width = fWin.width - moveLeft;
+						fWin.inDiv.style.width = fWin.width + 'px';
+					}
+					else {
+						fWin.width = fWin.width + moveLeft;
+						fWin.inDiv.style.width = fWin.width + 'px';
+					}
+				}
+				event.stopPropagation();
+			}
+			function fUp(event){	
+				fWin.inDiv.style.backgroundColor = '#DDDDDD';
+				document.body.style.cursor = 'default';
+				document.removeEventListener("mousemove", fMove, true);
+				document.removeEventListener("mouseup", fUp, true);
+				// And don't let the event propagate any further
+				event.stopPropagation();
+			}	
+		}
+		var help = new FWindow(100, 100, 500);
+		
+		function hview(){
+			document.body.style.cursor = 'col-resize';
+		}
+		function haway(){
+			document.body.style.cursor = 'default';
+		}
+		function setXY(){
+			dLeft = 100;
+			dTop = 100;
+			dWidth = 200; 
+			e.style.width = dWidth + 'px';
+			e.style.left = dLeft + 'px';
+			e.style.top = dTop + 'px';
+		}
+		var hdownl = false;
+		var hdownr = false;
+		function hputdownl(event){
+			hdownl = true;
+			downX = event.clientX;
+			downY = event.clientY;
+			document.body.style.cursor = 'col-resize';
+		}
+		function hputdownr(event){
+			hdownr = true;
+			downX = event.clientX;
+			downY = event.clientY;			
+			document.body.style.cursor = 'col-resize';
+		}
+		function wheredown(event){
+			//alert(event.clientX);
+			isdown = true;
+			downX = event.clientX;
+			downY = event.clientY;
+			c.style.backgroundColor = "#EEEEEE";
+		}
+		function wheremove(event){
+			var moveLeft = event.clientX - downX;
+			downX = event.clientX;
+			if(isdown){
+				//document.body.style.cursor = 'col-resize';
+				document.body.style.cursor = 'move';
+				var moveTop = event.clientY - downY;
+				downY = event.clientY;	
+				dLeft = dLeft + moveLeft; 
+				dTop = dTop + moveTop;
+				e.style.left = dLeft + 'px';
+				e.style.top = dTop + 'px';
+			}
+			else {
+				if(hdownl) {
+					dLeft = dLeft + moveLeft;
+					e.style.left = dLeft + 'px';
+					dWidth = dWidth - moveLeft;
+					e.style.width = dWidth + 'px';
+				}
+				if(hdownr){
+					dWidth = dWidth + moveLeft;
+					c.style.width = dWidth + 'px';		
+				}	
+			}
+			
+		}
+		function whereup(event){
+			c.style.backgroundColor = "#DDDDDD";
+			document.body.style.cursor = 'default';
+			hdownl = false; 
+			hdownr = false; 
+			isdown = false;
+		}
+		
+		/**
+		 * Drag.js:
+		 * This function is designed to be called from a mousedown event handler.
+		 * It registers temporary capturing event handlers for the mousemove and 
+		 * mouseup events that will follow, and uses these handlers to "drag" the
+		 * specified document element.  The first argument must be an absolutely
+		 * positioned document element.  It may be the element that received the 
+		 * mousedown event or it may be some containing element.
+		 * The second argument must be the Event object for the mousedown event.
+		 **/
+		function beginDrag(elementToDrag, event) {
+		    // Figure out where the element currently is.
+		    // The element must have left and top CSS properties in a style attribute.
+		    // Also, we assume they are set using pixel units.
+		    var x = parseInt(elementToDrag.style.left);
+		    var y = parseInt(elementToDrag.style.top);
+		
+		    // Compute the distance between that point and the mouse click.
+		    // The nested moveHandler function below needs these values.
+		    
+		
+		    // Register the event handlers that will respond to the mousemove events
+		    // and the mouseup events that follow this mousedown event.  Note that
+		    // these are registered as capturing event handlers on the document.
+		    // These event handlers remain active while the mouse button remains
+		    // pressed, and are removed when the button is released.
+		    document.addEventListener("mousemove", moveHandler, true);
+		    document.addEventListener("mouseup", upHandler, true);
+		
+		    // We've handled this event.  Don't let anybody else see it.
+		    event.stopPropagation();
+		    event.preventDefault();
+		
+		    /**
+		     * This is the handler that captures mousemove events when an element
+		     * is being dragged.  It is responsible for moving the element.
+		     **/
+		    function moveHandler(event) {
+		        // Move the element to the current mouse position, adjusted as
+			// necessary by the offset of the initial mouse click.
+			elementToDrag.style.left = (event.clientX - deltaX) + "px";
+			elementToDrag.style.top = (event.clientY - deltaY) + "px";
+		
+			// And don't let anyone else see this event.
+			event.stopPropagation();
+		    }
+		
+		    /**
+		     * This is the handler that captures the final mouseup event that
+		     * occurs at the end of a drag.
+		     **/
+		    function upHandler(event) {
+			// Unregister the capturing event handlers
+			document.removeEventListener("mouseup", upHandler, true);
+			document.removeEventListener("mousemove", moveHandler, true);
+			// And don't let the event propagate any further
+			event.stopPropagation();
+		    }
+		}
+	</script>
+</html>

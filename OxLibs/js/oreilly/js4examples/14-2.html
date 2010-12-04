@@ -1,0 +1,25 @@
+<script>
+var _console = null;
+
+function debug(msg) 
+{
+    // Open a window the first time we are called, or after an existing
+    // console window has been closed.
+    if ((_console == null) || (_console.closed)) { 
+        _console = window.open("","console","width=600,height=300,resizable");
+        // Open a document in the window to display plain text.
+        _console.document.open("text/plain");
+    }
+
+    _console.focus();                 // Make the window visible
+    _console.document.writeln(msg);   // Output the message to it
+    // Note that we purposely do not call close().  By leaving the
+    // document open we are able to append to it later.
+}
+</script>
+
+<!-- Here's an example of using this script. -->
+<script>var n = 0;</script>
+<form>
+<input type="button" value="Push Me"
+       onclick="debug('You have pushed me:\t' + ++n + ' times.');">

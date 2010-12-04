@@ -1,0 +1,172 @@
+
+
+<dd_faq>    
+    <dd_section name="Overview">
+        <dd_f q="Mission: What's the basic idea?">
+            <div class="mission">
+               <p>
+                    Catalyst is a group of tutors who operate a drop-in homework help program at the Hosmer
+                    Community Library.  Usually, we have 1 or 2 students working with a single tutor.  
+               </p>     
+               <p>
+                    In addition to homework help, we are also looking into creating our own teaching material to 
+                    help tutors offer remediation services to students who are far behind their current grade level
+                    at school. 
+                </p>
+            </div>
+        </dd_f>
+        <dd_f q="What's the idea behind creating your own teaching materials">
+            <p>
+                By creating our own library of materials, we can most easily create
+                programs tailored to 1) the dynamics of one-on-one tutoring and 2) 
+                the specifics of Minnesota Graduation Requirement Examinations such
+                as the MBST and the MCA-II. 
+            </p>
+            For more on our motivation, please see Appendix A of 
+            <a href="pdf.php?pdf=approach.pdf">
+                <i>Catalyst's Approach to Teaching Mathematics</i>
+            </a>
+            
+        </dd_f>
+        <dd_f q="What's the state of materials development project">
+            <p>
+            	We developed a beta-level material creation system that allowed a user
+            	to enter the materials in a custom xml markup language -- a language that
+            	looks a lot like HTML.  The idea behind this engine is to make it much 
+            	easier to create and maintain a large database of materials.  Using 
+            	off the shelve tools from Microsoft or Adobe can make become difficult when 
+            	working with large number of files.  Overall, the system is designed to let
+            	the author focus on content while all layout and style matters are taken care
+            	of by the material creation system. 
+            </p>
+            <p>
+            	Meanwhile, we also worked with teachers on developing the 
+            	overall educational approach (see below for more information on our approach). 
+            </p>
+            <p>
+            	After receiving much feedback over the last two years, we working towards upgrading
+            	this project.  Please contact us for more information. 
+            </p>
+
+            
+        </dd_f>
+  
+
+        <dd_f q="What topics are you targeting?">
+            Currently, library content development is guided by 
+            1) the 
+            <a href="http://www.nctm.org/focalpoints/">
+                National Council of Teachers of Mathematics K-8 Curriculum Focal Points
+            </a>
+            and 
+            2) the mathematic 
+            <a href="http://education.state.mn.us/MDE/Accountability_Programs/Assessment_and_Testing/Assessments/MCA_II/MCA_II_General_Information/index.html">
+                Graduation Requirement Examinations (GREs) set by the 
+                Minnesota Department of Education
+            </a>.  
+            <br/><br/>
+            Originally, our materials were developed to help students pass the 
+            Minnesota Basic Skills Test (MBST) math exam; we will be editing our 
+            database for necessary changes needed to help students pass the 8th and 11th grade 
+            Minnesota Comprehension Assessment II exams which replaced the MBST in 2006. 
+            <br/><br/> 
+            Major content that will be available in our 2007 database will include:
+            <ul>
+                <li>
+                    Understanding number notation, place value, number magnitude, and number lines. 
+                </li>
+                <li>
+                    Basic arithmetic (+, -, x, /) using whole numbers, fractions, decimals and percentages.                    
+                </li>
+                <li>
+                    Understanding and working with prime numbers and factoring.                     
+                </li>
+                <li>
+                    Understanding exponential notation and computing with scientific notation.                    
+                </li>
+                <li>
+                    Rounding, estimation, "mental math", and calculator computation.                     
+                </li>
+                <li>
+                    Understanding and calculating with positive and negative numbers.                    
+                </li>
+                <li>
+                    Understanding, measuring, and calculating length, area, and volume.                    
+                </li>
+                <li>
+                    Understanding, naming, and converting between common units of measurement for length, area, and volume.                    
+                </li>              
+                <li>
+                    Names and properties of two and three dimensional shapes.                    
+                </li>  
+                <li>
+                    Understanding and measuring angles.                    
+                </li>
+                <li>
+                    Understanding, reading and creating plots, charts, tables, and graphs.                    
+                </li>
+                <li>
+                    Introductory statistics such as mean, median, surveys, and basic probability.                      
+                </li>
+            </ul> 
+            All material is covered computationally and in context.  With these programs in place, 
+            we will begin building on this work to extend the library with content (e.g. algebra) 
+            needed for the 11th grade MCA-II and ACT/SAT tests. 
+            <br/><br/>
+            We are hoping to have this initial library completed during the Winter of 2007, but
+            this date is contingent on our fund raising efforts. 
+        </dd_f>
+        <dd_f q="What is your underlying educational philosopohy?">
+            A substantial debate on how best to teach mathematics emerged when the 
+            <a href="http://www.nctm.org">National Council of Teachers of Mathematics (NCTM)</a> 
+            released its first 
+            <i>Principles and Standards</i> document in 1989 and launched the 
+            mathematics education reform movement.  
+            <br/><br/>
+            Generally, reformers cast this debate as the teaching of fundamental mathematical 
+            concepts in real-world applications versus the more traditional "skill-and-drill" 
+            approach that centers on isolated computational/algorithmic fluency and route 
+            memorization of mathematical facts.  The reform debate, however, is also a continuation of a 
+            larger (and older) debate surrounding constructivism or "discovery learning" versus 
+            explicitly teacher-led direct instruction.  
+            <br/><br/>
+            At Catalyst, we place strong emphasis on the NCTM process standards.  
+            We strongly believe that conceptual foundations are more important than disconnected 
+            route memorization and isolated repetitive algorithmic practice.  
+            Students need to be able to talk about mathematics; to be able reason with and 
+            compare mathematical ideas; and to be able use multiple representations to express 
+            mathematical concepts and solve problems. 
+            Foundational conceptual knowledge is lasting and it is generative; that is, it makes 
+            learning increasingly easier and easier.  
+            <br/><br/>
+            However, it was not the intent of the Principles and Standards nor is it our intent to 
+            avoid the building of computational and algorithmic fluency.  But, following the NCTM 
+            guidelines, we stress practice and fluency after strong conceptual foundations are in place. 
+            <br/><br/>
+            The NCTM reform movement and educational theory in general is a very complicated issue, to 
+            say the least.  For more on these issues and for a detailed exposition of the
+            philosophy behind our materials please see our position paper
+            <a href="pdf.php?pdf=approach.pdf">
+                <i>Catalyst's Approach to Teaching Mathematics</i>
+            </a>.
+            <br/><br/>
+            The purpose of this document -- and Catalyst in general -- is to 
+            be very explicit about our education philosophy.  This way, as we grow and work
+            with more schools, students, teachers, and other experts -- we can 
+            systematically fix the problems and reinforce the strong points. 
+            <br/><br/>
+            The fruit of this process is a technology that will lead tutors to be as 
+            effective as possible.  This way, all of students and our tutors using 
+            our materials will benefit from our work and our growing experience on
+            how to best tutor students in a one-on-one environment. 
+        </dd_f>
+    </dd_section>
+    
+    
+
+    
+
+
+    
+    
+</dd_faq>

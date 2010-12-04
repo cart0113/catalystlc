@@ -1,0 +1,17 @@
+<!-- Check whether JavaScript 1.2 is supported. -->
+<script language="JavaScript1.2">var _js12_ = 1.2</script>
+
+<!-- Now avoid the problems with JavaScript 1.2 on Netscape by running -->
+<!-- the following code on any browser that supports JavaScript 1.1. If -->
+<!-- the browser does not support JavaScript 1.2, however, we'll display -->
+<!-- an error message and suppress any syntax errors that occur. -->
+<script language="JavaScript1.1">
+// If JavaScript 1.2 is not supported, fail gracefully.
+function supressErrors() { return true; }
+if (!_js12_) {
+    window.onerror = supressErrors;
+    alert("This program requires a browser with JavaScript 1.2 support");
+}
+
+// Now proceed with the JavaScript 1.2 code. 
+</script>
