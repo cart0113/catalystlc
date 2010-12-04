@@ -1,0 +1,198 @@
+div.gui_Frame{
+	background-color:    rgb(255,255,255);
+	padding:             0.2in;
+	border:              solid rgb(200,200,255) 0.15in;
+	width:               700.0px;
+	z-index:             102;
+	opacity:             1.0;
+}
+
+
+div.gui_Gdiv{
+	overflow:            auto;
+}
+
+
+div.gui_LightBox{
+	position:            absolute;
+	top:                 0;
+	left:                0;
+	opacity:             0.5;
+	background-color:    rgb(25,25,25);
+	z-index:             101;
+}
+
+
+div.gui_Modal{
+	position:            absolute;
+	top:                 0;
+	left:                0;
+	opacity:             1.0;
+	z-index:             100;
+	font-family:         Verdana, Geneva, sans-serif;
+}
+
+
+div.gui_MsgBox{
+	background-color:    rgb(255,255,255);
+	padding:             0.2in;
+	border:              solid rgb(200,200,255) 0.15in;
+	width:               700.0px;
+}
+
+
+button{
+	padding:             4.0px;
+	font-size:           10.0pt;
+	font-weight:         800;
+	color:               rgb(0,0,0);
+}
+
+
+div.gui_MsgBox_control{
+	padding:             0.1in;
+	float:               left;
+}
+
+
+div.gui_MsgBox_frame{
+	padding:             0.1in;
+	font-size:           10.0pt;
+	font-weight:         normal;
+	color:               rgb(30,30,30);
+}
+
+
+div.gui_MsgBox_sub{
+	background-color:    rgb(255,255,255);
+	padding:             0.1in;
+	font-weight:         400;
+	color:               rgb(80,80,80);
+	font-size:           11.0pt;
+	font-style:          italic;
+}
+
+
+div.gui_MsgBox_title{
+	padding:             0.1in;
+	font-size:           12.0pt;
+	font-weight:         700;
+	color:               rgb(50,50,50);
+}
+
+
+div.gui_Node{
+	padding:             2.0px;
+}
+
+
+div.gui_NodeContent{
+	border-left:         solid 2px rgb(110,110,255);
+	padding-left:        2.0px;
+	padding:             5.0px;
+}
+
+
+div.gui_NodeInsert{
+	padding:             2.0px;
+	height:              14.0px;
+	background-color:    rgb(255,255,255);
+	color:               rgb(150,150,150);
+	font-weight:         300;
+	font-size:           8.0px;
+}
+
+
+button.gui_NodeInsertButtonNode{
+	background-color:    rgb(255,255,255);
+}
+
+
+div.gui_NodeInsertButtons{
+	float:               right;
+}
+
+
+div.gui_NodeInsertLabel{
+	float:               right;
+}
+
+
+div.gui_NodeToolbar{
+	height:              20.0px;
+	background-color:    rgb(230,230,255);
+	border-left:         solid 2px rgb(110,110,255);
+	border-top:          solid 2px rgb(110,110,255);
+}
+
+
+button.gui_NodeToolbarButton{
+	width:               16.0px;
+	height:              16.0px;
+	padding:             2.0px;
+	margin-left:         3.0px;
+	margin:              1.0px;
+	background-color:    rgb(230,230,255);
+	border:              rgb(200, 200, 255) solid 0px;
+	background-repeat:   no-repeat;
+	background-position: center;
+	position:            relative;
+}
+
+button.gui_NodeToolbarButton:active{
+	background-color:    rgb(175,175,255);
+}
+
+
+button.gui_NodeToolbarButtonDelete{
+	background-image:    url(http://media.catalystlc.org/images/buttons/delete_small.png);
+}
+
+
+button.gui_NodeToolbarButtonLeft{
+	float:               left;
+}
+
+
+button.gui_NodeToolbarButtonMoveDown{
+	background-image:    url(http://media.catalystlc.org/images/buttons/down_small.png);
+}
+
+
+button.gui_NodeToolbarButtonMoveUp{
+	background-image:    url(http://media.catalystlc.org/images/buttons/up_small.png);
+}
+
+
+button.gui_NodeToolbarButtonRight{
+	float:               right;
+}
+
+
+button.gui_NodeToolbarButtonShowHide{
+	background-image:    url(http://media.catalystlc.org/images/buttons/hide_small.png);
+}
+
+
+div.gui_SubItem{
+	padding:             4.0px;
+}
+
+div.gui_SubItem:hover{
+	background-color:    rgb(220,220,255);
+}
+
+
+div.gui_SubMenu{
+	position:            absolute;
+	background-color:    white;
+	border:              3px solid rgb(220, 220, 255);
+	font-size:           8.0pt;
+	font-family:         Verdana, Geneva, sans-serif;
+	color:               rgb(100,100,100);
+	font-weight:         200;
+	font-style:          italic;
+	padding:             4.0px;
+}
+
+

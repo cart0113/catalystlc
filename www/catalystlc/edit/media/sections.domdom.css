@@ -1,0 +1,77 @@
+div.sections_Block{
+	width:               6.95in;
+	border:              solid red 1px;
+	overflow:            auto;
+}
+
+
+div.sections_Content{
+}
+
+
+textarea.sections_EditorTextArea{
+	width:               99.0%;
+	min-height:          4.0in;
+	height:              100.0%;
+}
+
+
+input.sections_EditorTitle{
+	width:               3.0in;
+	float:               left;
+}
+
+
+select.sections_EditorTypes{
+}
+
+
+div.sections_Left{
+	min-height:          0.18in;
+	width:               2.0in;
+	background-color:    rgb(155,200,220);
+	float:               left;
+}
+
+
+div.sections_Middle{
+	min-height:          0.18in;
+	width:               0.35in;
+	background-color:    rgb(255,230,220);
+	float:               left;
+}
+
+
+div.sections_Right{
+	min-height:          0.18in;
+	width:               4.6in;
+	background-color:    rgb(255,100,30);
+	float:               left;
+}
+
+
+div.sections_Section{
+}
+
+
+div.sections_Title{
+	font-size:           12.0pt;
+	font-weight:         300;
+}
+
+
+img.sections_TitleIcon{
+	position:            relative;
+	width:               33.0px;
+	height:              33.0px;
+	border:              solid 0 white;
+	float:               left;
+}
+
+
+div.sections_TitleMain{
+	padding-right:       0.1in;
+	float:               left;
+}
+
+

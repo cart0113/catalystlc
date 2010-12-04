@@ -1,0 +1,47 @@
+
+#lc_faq {
+	
+}
+
+div.lc_faq_sec1 {
+	padding-bottom: 20px; 
+}
+div.lc_faq_sec_name1{
+	color: #444444; 
+	font-weight: 600; 
+	font-size: 12px; 
+	padding-bottom: 10px; 
+}
+
+div.lc_faq_ref1{
+	padding-bottom: 5.5px; 
+}
+a.lc_faq_ref1{ 
+	font-size: 11px; 
+	color: #1111FF; 
+}
+a.lc_faq_ref2{
+	color: #444444; 
+	text-decoration: none; 
+	font-size: 11px; 
+	font-weight: bold; 
+	font-style: italic; 
+}
+a.lc_faq_ref2:hover{
+	text-decoration: none;
+}
+
+div.lc_faq_text{
+	padding-top: 15px; 
+	padding-bottom: 35px; 
+}
+
+li {
+	padding-bottom: 10px; 
+}
+
+div.faq_pic {
+	float: right; 
+	height: 200px; 
+	width: 320px;
+}

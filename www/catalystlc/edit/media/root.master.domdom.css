@@ -1,0 +1,65 @@
+div.master_div_body{
+	background-color:    rgb(255,255,255);
+	width:               8.0in;
+	min-height:          8.5in;
+	margin:              auto;
+	padding:             0.1in;
+	color:               rgb(50,50,50);
+	font-family:         Arial, Helvetica, sans-serif;
+	font-size:           9.0pt;
+}
+
+
+div.master_div_h1{
+	font-size:           18.0px;
+	font-weight:         bold;
+	color:               rgb(150,75,75);
+	padding-top:         10.0px;
+	padding-bottom:      10.0px;
+}
+
+
+div.master_div_h2{
+	background-color:    rgb(255,255,255);
+	width:               8.0in;
+	min-height:          8.5in;
+	margin:              auto;
+}
+
+
+div.master_div_header{
+	background-color:    rgb(150,75,75);
+	width:               100.0%;
+	min-height:          1.0in;
+}
+
+
+div.master_div_main{
+	background-color:    rgb(200,200,200);
+	width:               100.0%;
+	min-height:          10.0in;
+}
+
+
+div.pycode_to_html_div_pycode{
+	font-size:           8.0pt;
+	font-weight:         500;
+	font-family:         Courier New, Courier New, Courier, monospace;
+	padding:             10.0px;
+	background-color:    rgb(245,245,245);
+	border:              solid 3px rgb(200,200,200);
+}
+
+
+div.master_div_root{
+	overflow:            auto;
+}
+
+
+span.master_span_pod{
+	color:               rgb(70,70,70);
+	font-weight:         600;
+	font-family:         Courier New, Courier New, Courier, monospace;
+}
+
+

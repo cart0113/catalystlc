@@ -1,0 +1,120 @@
+button::-moz-focus-inner { border: 0; }
+
+div.printable_Background{
+	min-height:          12.0in;
+	background-color:    rgb(240,240,240);
+	padding:             0.1in;
+}
+
+
+img.printable_CatalystLogo{
+	width:               120.0px;
+	height:              57.6px;
+	position:            relative;
+}
+
+
+div.printable_CenterFrame{
+	width:               11.0in;
+	margin:              0.1in auto;
+}
+
+
+div.printable_Footer{
+	width:               7.0in;
+	margin-top:          0.1in;
+	height:              0.3in;
+	border-top:          solid 0.01in #BBBBBB;
+	background-color:    rgb(255,245,245);
+	font-size:           6.5pt;
+	letter-spacing:      0.25pt;
+	color:               #BBBBBB;
+	font-family:         Tahoma, Geneva, sans-serif;
+}
+
+
+div.printable_Footer_L{
+	padding-left:        2.0in;
+	height:              0.5in;
+	float:               left;
+}
+
+
+div.printable_Footer_R{
+	text-align:          right;
+}
+
+
+div.printable_Header{
+	height:              0.4in;
+	padding-bottom:      0.25in;
+}
+
+
+div.printable_Header_L{
+	width:               2.0in;
+	background-color:    rgb(255,250,250);
+	float:               left;
+}
+
+
+div.printable_Header_R{
+	width:               4.5in;
+	background-color:    rgb(250,255,250);
+	float:               left;
+}
+
+
+div.printable_Middle{
+	width:               7.0in;
+	min-height:          9.0in;
+	background-color:    rgb(245,255,245);
+}
+
+
+div.printable_Page{
+	background-color:    rgb(255,255,255);
+	width:               7.8in;
+	margin:              0.1in;
+	margin-left:         3.1in;
+}
+
+
+div.printable_Pages{
+	font-family:         Verdana, Geneva, sans-serif;
+}
+
+
+div.printable_Panel{
+	border:              solid rgb(220,220,255) 2px;
+	overflow:            auto;
+	background-color:    rgb(240,240,255);
+	height:              6.0in;
+	width:               2.8in;
+	margin:              0.1in;
+	float:               left;
+	position:            fixed;
+	left:                auto;
+	top:                 0.2in;
+}
+
+
+div.printable_TitleBot{
+	font-size:           11.0pt;
+	font-weight:         400;
+	color:               rgb(140,140,140);
+}
+
+
+div.printable_TitleTop{
+	font-size:           19.0pt;
+	font-weight:         500;
+	color:               rgb(70,70,70);
+}
+
+
+div.printable_pdiv{
+	overflow:            auto;
+}
+
+
