@@ -1,0 +1,192 @@
+button::-moz-focus-inner { border: 0; }
+
+div.iblog_AddEntry{
+	background-color:    rgb(245,255,245);
+	width:               7.8in;
+	height:              18.0px;
+	margin:              0.1in;
+	margin-left:         3.1in;
+	color:               rgb(115,115,115);
+	text-align:          center;
+	padding-top:         3.0px;
+	padding-bottom:      3.0px;
+	font-size:           7.0pt;
+	font-style:          italic;
+}
+
+
+div.iblog_BackTitle{
+	font-style:          italic;
+	width:               100.0%;
+	background-color:    rgb(245,245,255);
+}
+
+
+div.iblog_Background{
+	min-height:          12.0in;
+	background-color:    rgb(240,240,240);
+	padding:             0.1in;
+}
+
+
+button.iblog_Button{
+	width:               24.0px;
+	height:              24.0px;
+	padding:             5.0px;
+	margin-left:         3.0px;
+	margin:              1.0px;
+	background-color:    rgb(230,230,255);
+	border:              rgb(200, 200, 255) solid 1px;
+	background-repeat:   no-repeat;
+	background-position: center;
+	position:            relative;
+}
+
+button.iblog_Button:active{
+	background-color:    rgb(175,175,255);
+}
+
+
+button.iblog_ButtonDelete{
+	background-image:    url(http://domdom_media.andrewjcarter.com/images/delete.png);
+}
+
+
+button.iblog_ButtonLeft{
+	float:               left;
+	margin-right:        4.0px;
+}
+
+
+button.iblog_ButtonMoveDown{
+	background-image:    url(http://domdom_media.andrewjcarter.com/images/down.png);
+}
+
+
+button.iblog_ButtonMoveUp{
+	background-image:    url(http://domdom_media.andrewjcarter.com/images/up.png);
+}
+
+
+button.iblog_ButtonRight{
+	float:               right;
+	margin-left:         4.0px;
+}
+
+
+button.iblog_ButtonShowHide{
+	background-image:    url(http://domdom_media.andrewjcarter.com/images/hide.png);
+}
+
+
+div.iblog_CenterFrame{
+	width:               11.0in;
+	min-height:          12.0in;
+	margin:              0.1in auto;
+}
+
+
+div.iblog_Entries{
+	font-family:         Verdana, Geneva, sans-serif;
+}
+
+
+div.iblog_EntryContent{
+	background-color:    rgb(255,245,245);
+	width:               7.4in;
+	min-height:          4.0in;
+	margin:              10.0px;
+	padding:             10.0px;
+}
+
+
+textarea.iblog_EntryEdit{
+	background-color:    rgb(255,255,255);
+	width:               7.3in;
+	height:              4.0in;
+}
+
+
+div.iblog_EntryToolbar{
+	background-color:    rgb(240,240,255);
+	width:               7.65in;
+	height:              34.0px;
+	margin:              4.0px;
+	padding:             2.0px;
+}
+
+
+div.iblog_EntryView{
+	background-color:    rgb(255,255,255);
+	width:               7.8in;
+	margin:              0.1in;
+	margin-left:         3.1in;
+}
+
+
+div.iblog_FrontTitle{
+	float:               left;
+	padding-right:       4.0px;
+}
+
+
+div.iblog_Header{
+	background-color:    rgb(255,255,255);
+	width:               7.8in;
+	height:              200.0px;
+	margin:              0.1in;
+	margin-left:         3.1in;
+	background-image:    url('http://domdom_media.andrewjcarter.com/images/anewday.png');
+	font-family:         Verdana, Geneva, sans-serif;
+	color:               rgb(255,255,255);
+	font-weight:         bold;
+	font-size:           11.0pt;
+	font-style:          italic;
+	vertical-align:      bottom;
+}
+
+
+div.iblog_Panel{
+	border:              solid rgb(220,220,255) 2px;
+	overflow:            auto;
+	background-color:    rgb(240,240,255);
+	height:              6.0in;
+	width:               2.4in;
+	margin:              0.1in;
+	float:               left;
+	position:            fixed;
+	left:                auto;
+	top:                 0.2in;
+	padding:             8.0px;
+	padding-top:         24.0px;
+	color:               rgb(100,100,100);
+	font-size:           9.0pt;
+	font-style:          italic;
+}
+
+
+input.iblog_TitleEdit{
+	background-color:    rgb(245,245,255);
+	color:               rgb(20,20,20);
+	height:              13.0px;
+	font-size:           6.0pt;
+	width:               4.0in;
+	border:              solid 1px rgb(210, 210, 255);
+}
+
+
+div.iblog_ToolbarTitle{
+	color:               rgb(80,80,80);
+	font-size:           10.0pt;
+	width:               5.4in;
+	padding:             2.0px;
+	padding-left:        10.0px;
+}
+
+
+div{
+	overflow:            auto;
+	font-family:         Verdana, Geneva, sans-serif;
+}
+
+

@@ -1,0 +1,6 @@
+down_png = "http://domdom_media.andrewjcarter.com/images/down.png"
+hide_png = "http://domdom_media.andrewjcarter.com/images/hide.png"
+up_png = "http://domdom_media.andrewjcarter.com/images/up.png"
+show_png = "http://domdom_media.andrewjcarter.com/images/show.png"
+delete_png = "http://domdom_media.andrewjcarter.com/images/delete.png"
+anewday_png = "http://domdom_media.andrewjcarter.com/images/anewday.png"

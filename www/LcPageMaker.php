@@ -35,8 +35,8 @@ class LcPageMaker extends OxPage {
 		if($_SERVER['SERVER_NAME'] == "www.catalystlc.org"){
 			//$this->addCssFile("http://disk.catalystlc.org/public/clc/css/catalystlc.css");
 			//$fastUrl = "http://disk.catalystlc.org/public/clc/";
-			$this->addCssFile($_SERVER['SERVER_NAME'] . "css/catalystlc.css");
-			$fastUrl = $_SERVER['SERVER_NAME'];
+			$this->addCssFile("http://" . $_SERVER['SERVER_NAME'] . "/css/catalystlc.css");
+			$fastUrl = "http://" . $_SERVER['SERVER_NAME'];
 		}
 		else {
 			$this->addCssFile($this->getHttp('main') . '/css/catalystlc.css');
