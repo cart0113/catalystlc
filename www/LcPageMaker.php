@@ -121,7 +121,7 @@ class LcPageMaker extends OxPage {
 							
 		$textAlls[] = " 
 				<p>
-					We are a Minneapolis, MN based startup 501(c)(3).  Catalyst was founded by a dedicated group of 
+					We are a Mieapolis, MN based startup 501(c)(3).  Catalyst was founded by a dedicated group of 
 					teachers, tutors, and professionals working in math related careers. <br/><br/>
 				</p>
 				<p>  
