@@ -58,8 +58,8 @@ class LcPageMaker extends OxPage {
 		$domBodyLeft = new OxTagCell($domBodyRow, 'lc_body_left');
 		$domBodyRight = new OxTagCell($domBodyRow, 'lc_body_right');
 		
-		$login = new OxTagDiv($domBodyRight, 'lc_login');	
-		$this->makeLogin($login);
+		//$login = new OxTagDiv($domBodyRight, 'lc_login');	
+		//$this->makeLogin($login);
 		
 		//$this->makeSidebar($domBodyRight);
 				
@@ -150,54 +150,54 @@ class LcPageMaker extends OxPage {
 			}
 			
 			
-			$hd = new OxTagDiv($textMain, 'lc_text_approach');
+			//$hd = new OxTagDiv($textMain, 'lc_text_approach');
 			
-			$hd->setStyle("z-index: 102; position: absolute; padding-top: 20px;");
+			//$hd->setStyle("z-index: 102; position: absolute; padding-top: 20px;");
 
-			$header = new OxTagDiv($hd, null, "lc_header lc_header_approach"); 
-			$ht = new OxTagDiv($hd, null, 'lc_text_chunk');
+			//$header = new OxTagDiv($hd, null, "lc_header lc_header_approach"); 
+			//$ht = new OxTagDiv($hd, null, 'lc_text_chunk');
 			
-			$text = 
-				"Some students just need a little help with homework.  That's great and we
-				offer homework help for these students.  But other students have greater foundational 
-				problems and need more intensive remediation.  Due to these problems, 
-				they are having trouble passing state mandated exams necessary for graduation.
-				<br/><br/>
-				So in addition to offering homework help, we are also working towards developing
-				assessment and teaching materials to offer reteaching services.  These materials
-				will be designed so 
-				tutors can easily locate, download, and print out materials necessary teaching materials.  This way, tutors have the materials
-				necessary to go back and work on fundamental mathematical concepts as outlined in
-				the Minnesota Department of Education's state standards.  Unlike textbooks designed for the classroom, these materials 
-				are designed to be taught by volunteers and other nonprofessional math educators during
-				face-to-face one-on-one tutoring sessions. 
-				<br/><br/>
-				We have developed an initial set of printables.  Also, we have created an 
-				underlying \"printable creation\" engine that allows fast and easy creation of printables
-				without using cumbersome tools like Microsoft Word. 
-				<br/><br/>
-				This effort is a work in progress, so please <a href='./contact.php'>contact us</a> to find
-				out where we are at or if you want access to our current library of printables. 
-				<br/><br/>
-				Below are three examples that show how we related our lesson to the MCA-II math exams: 
-				";
-			$ht->addText($text);
-			
-			for($i = 1; $i < 4; $i++){
-				$div = new OxTagDiv($hd);
-				$image = new OxTagImage($div, null, null, "ex$i.gif");
-				$image->setStyle("padding-top: 10px; padding-bottom: 10px;");
-				$table = new OxTagTable($div);
-				$table->setStyle("width: 100%; padding-left: 10px;");
-				$row = new OxTagRow($table);
-				$cell = new OxTagCell($row);
-				$image = new OxBlockImageRef($cell, null, null, "A$i" . "_off.gif", "pdf.php?pdf=A$i.pdf");
-				$cell = new OxTagCell($row);
-				$cell->setStyle("vertical-align: middle; padding-left: 20px; padding-right: 20px;");
-				$image = new OxTagImage($cell, null, null, 'arrow.gif');
-				$cell = new OxTagCell($row);
-				$image = new OxBlockImageRef($cell, null, null, "L$i" . "_off.gif", "pdf.php?pdf=L$i.pdf");
-			}
+			//$text = 
+			//	"Some students just need a little help with homework.  That's great and we
+			//	offer homework help for these students.  But other students have greater foundational 
+			//	problems and need more intensive remediation.  Due to these problems, 
+			//	they are having trouble passing state mandated exams necessary for graduation.
+			//	<br/><br/>
+			//	So in addition to offering homework help, we are also working towards developing
+			//	assessment and teaching materials to offer reteaching services.  These materials
+			//	will be designed so 
+			//	tutors can easily locate, download, and print out materials necessary teaching materials.  This way, tutors have the materials
+			//	necessary to go back and work on fundamental mathematical concepts as outlined in
+			//	the Minnesota Department of Education's state standards.  Unlike textbooks designed for the classroom, these materials 
+			//	are designed to be taught by volunteers and other nonprofessional math educators during
+			//	face-to-face one-on-one tutoring sessions. 
+			//	<br/><br/>
+			//	We have developed an initial set of printables.  Also, we have created an 
+			//	underlying \"printable creation\" engine that allows fast and easy creation of printables
+			//	without using cumbersome tools like Microsoft Word. 
+			//	<br/><br/>
+			//	This effort is a work in progress, so please <a href='./contact.php'>contact us</a> to find
+			//	out where we are at or if you want access to our current library of printables. 
+			//	<br/><br/>
+			//	Below are three examples that show how we related our lesson to the MCA-II math exams: 
+			//	";
+			//$ht->addText($text);
+			//
+			//for($i = 1; $i < 4; $i++){
+			//	$div = new OxTagDiv($hd);
+			//	$image = new OxTagImage($div, null, null, "ex$i.gif");
+			//	$image->setStyle("padding-top: 10px; padding-bottom: 10px;");
+			//	$table = new OxTagTable($div);
+			//	$table->setStyle("width: 100%; padding-left: 10px;");
+			//	$row = new OxTagRow($table);
+			//	$cell = new OxTagCell($row);
+			//	$image = new OxBlockImageRef($cell, null, null, "A$i" . "_off.gif", "pdf.php?pdf=A$i.pdf");
+			//	$cell = new OxTagCell($row);
+			//	$cell->setStyle("vertical-align: middle; padding-left: 20px; padding-right: 20px;");
+			//	$image = new OxTagImage($cell, null, null, 'arrow.gif');
+			//	$cell = new OxTagCell($row);
+			//	$image = new OxBlockImageRef($cell, null, null, "L$i" . "_off.gif", "pdf.php?pdf=L$i.pdf");
+			//}
 			
 			$text = "
 				<br/><br/>
@@ -222,7 +222,7 @@ class LcPageMaker extends OxPage {
 				</div>
 				"; 
 				
-			$hd->addText($text);
+			//$hd->addText($text);
 			
 		}
 		else{
@@ -259,12 +259,12 @@ class LcPageMaker extends OxPage {
 				binder for a student to take home.";
 			}
 			
-			$divp = new OxTagDiv(null, null, "faq_pic");
+			//$divp = new OxTagDiv(null, null, "faq_pic");
 			//$divp->addStyle("padding: 10px; float: right;");
-			$div = new OxTagDiv($divp);
+			//$div = new OxTagDiv($divp);
 			
-			$img = new OxTagImage($div, null, null, $fastUrl . "$picNum.jpg");
-			$img->addStyle("padding-bottom: 0px; padding-left: 25px;");
+			//$img = new OxTagImage($div, null, null, $fastUrl . "$picNum.jpg");
+			//$img->addStyle("padding-bottom: 0px; padding-left: 25px;");
 			
 			$div = new OxTagDiv($divp);
 			$div->addStyle("font-size:9px; font-style: italic; width: 310px; padding-top: 10px; padding-left: 18px; text-align: center;");
