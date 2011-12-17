@@ -30,22 +30,22 @@ class LcFaq extends OxParserSaxRx {
 		$title = new OxTagDiv($this->faqDiv, null, "h1");
 		$title->addText("Frequently Asked Questions -- The Questions");
 	
-		#$c = 0;
-		#$firstSec = true;  
-		#foreach($this->sections as $section){	
-		#	$sec = new OxTagDiv($this->faqDiv, null, "lc_faq_sec1");
+		$c = 0;
+		$firstSec = true;  
+		foreach($this->sections as $section){	
+			$sec = new OxTagDiv($this->faqDiv, null, "lc_faq_sec1");
 		#	if($firstSec){
 		#		$sec->addElement($this->pic);
 		#		$firstSec = false; 
 		#	}
-		#	$secName = new OxTagDiv($sec, null, "lc_faq_sec_name1");
-		#	$secName->addText($section->section);
-		#	foreach($section->faqs as $faq){
-		#		$faqName = new OxTagDiv($sec, null, "lc_faq_ref1");
-		#		$faqName = new OxTagRef($faqName, null, "lc_faq_ref1", "Q: " . $faq->q, "#sec$c$c");
-		#		$c++; 
-		#	}
-		#}
+			$secName = new OxTagDiv($sec, null, "lc_faq_sec_name1");
+			$secName->addText($section->section);
+			foreach($section->faqs as $faq){
+				$faqName = new OxTagDiv($sec, null, "lc_faq_ref1");
+				$faqName = new OxTagRef($faqName, null, "lc_faq_ref1", "Q: " . $faq->q, "#sec$c$c");
+				$c++; 
+			}
+		}
 		$title = new OxTagDiv($this->faqDiv, null, "h1");
 		$title->addText("<br/><br/><br/><br/>Frequently Asked Questions -- The Answers");
 	
