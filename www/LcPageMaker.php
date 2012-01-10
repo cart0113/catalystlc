@@ -111,11 +111,7 @@ class LcPageMaker extends OxPage {
 			$textAlls[] = "
 				<p>    
 					We are dedicated to helping Minneapolis students achieve their highest mathematical potential. 
-			    	Currently, we offer homework help at the Hosmer Community Library in South Minneapolis, MN.
-				</p>
-			    <p>
-			        We are also working towards creating a remediation program
-					for students who need a little more than homework help can offer. 
+			    	Currently, we offer math homework help at the Hosmer Community Library in South Minneapolis, MN.
 				</p>
 				";
 							
@@ -127,7 +123,7 @@ class LcPageMaker extends OxPage {
 				<p>  
 					Currently, Catalyst is not funded, is entirely a volunteer effort, and 
 					offers homework help services at 
-					<a href='http://www.ci.minneapolis.mn.us/hpc/landmarks/36th_St_E_347_Hosmer_Library.asp'>Hosmer Community Library</a>
+					<a href='http://www.hclib.org/AgenciesAction.cfm?agency=hs'>Hosmer Community Library</a>
 					in South Minneapolis.  
 				</p>
 				<p>We offer tutoring services from 6:00 to 8:00 PM on Tuesday and Thursday in the community room at Hosmer whenever
@@ -159,11 +155,11 @@ class LcPageMaker extends OxPage {
 			
 			//$text = 
 			//	"Some students just need a little help with homework.  That's great and we
-			//	offer homework help for these students.  But other students have greater foundational 
+			//	offer math homework help for these students.  But other students have greater foundational 
 			//	problems and need more intensive remediation.  Due to these problems, 
 			//	they are having trouble passing state mandated exams necessary for graduation.
 			//	<br/><br/>
-			//	So in addition to offering homework help, we are also working towards developing
+			//	So in addition to offering math homework help, we are also working towards developing
 			//	assessment and teaching materials to offer reteaching services.  These materials
 			//	will be designed so 
 			//	tutors can easily locate, download, and print out materials necessary teaching materials.  This way, tutors have the materials
