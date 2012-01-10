@@ -122,7 +122,7 @@ class LcPageMaker extends OxPage {
 				</p>
 				<p>  
 					Currently, Catalyst is not funded, is entirely a volunteer effort, and 
-					offers homework help services at 
+					offers math homework help services at 
 					<a href='http://www.hclib.org/AgenciesAction.cfm?agency=hs'>Hosmer Community Library</a>
 					in South Minneapolis.  
 				</p>
