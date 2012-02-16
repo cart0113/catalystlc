@@ -234,7 +234,7 @@ class LcPageMaker extends OxPage {
 		**********************************/
 		if($this->where == 'faq'){
 			require_once("LcFaq.php");
-			$this->addCssFile($fastUrl . "css/lc_faq.css");
+			$this->addCssFile($fastUrl . "/css/lc_faq.css");
 			
 			$picNum = $_SESSION['overview_picnum'];
 			if($picNum == null){
