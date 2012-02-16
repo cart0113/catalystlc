@@ -1,46 +1,16 @@
 <lc_content>
-    <div class="h1">Get Involved!</div>
-    Currently, this project is a volunteer effort.  
-    Our major goal for this year is to secure funding so we can hire more tutors and develop more 
-    material so we can help more students. 
-    <br/><br/>
-    So as a startup we're of course looking for <b>lots</b> of help.  If you want to get involved as a: 
-    <ol>
-        <li>
-            Tutor
-        </li>
-        <li>
-            Board Member
-        </li>
-        <li>
-            Member of our Curriculum Development Task Group
-        </li>
-        <li>
-            Financial Contributor
-        </li>
-        <li>
-            Student (yes, we're taking new students right now!)
-        </li>
-    </ol>
-    please contact us for more information. 
-    <div class="h1 hs">Financial Donations</div>
-        Make a tax deductible donation today!
-        <br/><br/>
-        Catalyst is a registered 501(c)(3) with the Internal Revenue Service. 
-        Any contribution to Catalyst is fully tax deductible.
     <div class="h1 hs">Contact</div>
     <table>
         <tr>
-            <td style="width: 220px;">
+           <td style="width: 220px;">
                 Catalyst Learning Center
            </td>
-           <td>Ann Novitske -- President, Treasurer, Board Member and Tutor</td>
+           <td>
+           Ann Novitske -- President, Treasurer, Board Member, and Tutor
+           </td>
         </tr>
         <tr>
             <td>email: </td><td>ann@catalystlc.org</td>
-        </tr>
-        <tr>
-            <td>phone: </td><td>            612.501.9500      </td>
         </tr>
     </table>  
     <br/><br/>
@@ -67,4 +37,19 @@
             <td>email: </td><td>rachel.a.tollefson@gmail.com</td>
         </tr>
     </table>     
-</lc_content>
+    <div class="h1">Get Involved!</div>
+        Currently, this project is primarily a volunteer effort. Our vision 
+        includes growing our volunteer corps & possibly hiring “pre-career”  
+        tutors so that we can expand to other libraries and help more students.  
+        As a young organization, we're looking for lots of help. If you want to 
+        get involved as a tutor or a charitable donor, please contact us for 
+        more information. 
+
+    <div class="h1 hs">Financial Donations</div>
+        Interested in helping Catalyst achieve its mission, but don’t have time 
+        right now to tutor? Make a tax deductible donation today!  
+        <br/><br/>
+        Catalyst is a registered 501(c)(3) with the Internal Revenue Service. 
+        Any contribution to Catalyst is fully tax deductible.
+
+</lc_content> 

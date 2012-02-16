@@ -1,19 +1,58 @@
-
-
 <dd_faq>    
     <dd_section name="Overview">
+
         <dd_f q="Mission: What's the basic idea?">
             <div class="mission">
                <p>
-                    Catalyst is a group of tutors who operate a drop-in homework help program at the Hosmer
-                    Community Library.  Usually, we have 1 or 2 students working with a single tutor.  
+                   Catalyst is a group of tutors who operate a drop-in math 
+                   homework help program at Hosmer Community Library. 
+                   Typically, we have 1 or 2 students working with a single 
+                   tutor.
                </p>     
-               <p>
-                    In addition to homework help, we are also looking into creating our own teaching material to 
-                    help tutors offer remediation services to students who are far behind their current grade level
-                    at school. 
-                </p>
             </div>
         </dd_f>
+
+        <dd_f q="What math topics can Catalyst tutors assist students with?">
+            <div class="mission">
+               <p>
+                   Catalyst math tutors are knowledgeable in math topics 
+                   commonly taught at the middle school, junior high, and 
+                   senior high school levels. Since our inception, we have 
+                   helped students with… 
+                   <ul>
+                        <li>Pre-Algebra/Basic Math Skills</li>
+                        <li>Algebra 1</li>
+                        <li>Geometry</li>
+                        <li>Algebra 2</li>
+                        <li>Trigonometry</li>
+                        <li>Calculus</li>
+                        <li>Probability & Statistics</li>                       
+                   </ul>
+               </p>     
+            </div>
+        </dd_f>
+
+        <dd_f q="What math topics can Catalyst tutors assist students with?">
+            <div class="mission">
+               <p>
+                    While the Catalyst tutors have some basic materials 
+                    (e.g. pencils, paper, rulers, non-graphing calculators) 
+                    at their sessions, students should also come prepared with 
+                    the following items to help the tutors determine the best 
+                    way to assist them: 
+                    <ul>
+                        <li>Math assignment</li>
+                        
+                        <li>Math textbook</li>
+                        
+                        <li>Math notebook with related notes from class</li>
+                        
+                        <li>Special math tools needed for assignment (e.g. protractor, compass, graphing calculator)</li> 
+                    </ul>
+               </p>     
+            </div>
+        </dd_f>
+
     </dd_section>
-</dd_faq>
+</dd_faq> 
+

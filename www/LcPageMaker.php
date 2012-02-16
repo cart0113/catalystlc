@@ -111,25 +111,30 @@ class LcPageMaker extends OxPage {
 			$textAlls[] = "
 				<p>    
 					We are dedicated to helping Minneapolis students achieve their highest mathematical potential. 
-			    	Currently, we offer math homework help at the Hosmer Community Library in South Minneapolis, MN.
+			    	Currently, we offer math homework help at Hosmer Community Library in south Minneapolis, MN.
 				</p>
 				";
 							
 		$textAlls[] = " 
 				<p>
-					We are a Minneapolis, MN based startup 501(c)(3).  Catalyst was founded by a dedicated group of 
-					teachers, tutors, and professionals working in math related careers. <br/><br/>
+					We are a Minneapolis, MN based startup 501(c)(3).  Catalyst was founded in 2006 by a dedicated group of 
+					teachers, tutors, and professionals working in math-related careers. <br/><br/>
 				</p>
 				<p>  
-					Currently, Catalyst is not funded, is entirely a volunteer effort, and 
+					Currently, Catalyst is minimally funded, is almost entirely a volunteer effort, and 
 					offers math homework help services at 
 					<a href='http://www.hclib.org/AgenciesAction.cfm?agency=hs'>Hosmer Community Library</a>
-					in South Minneapolis.  
+					in south Minneapolis, MN.  
 				</p>
-				<p>We offer tutoring services from 6:00 to 8:00 PM on Tuesday and Thursday in the community room at Hosmer whenever
-					Minneapolis Public Schools are in session.  
+				<p>We offer math tutoring services from 6:00 to 8:00 PM on Tuesday and Thursday in the community room at Hosmer on
+					days when Minneapolis Public Schools are in session.  
 				</p>
-			    <p>Please <a href='./contact.php'>contact us</a> for more information, if you would like to tutor, or if you would like to get involved as a tutor</p>
+			    <p>
+			    Please come to one of our evening sessions at Hosmer or 
+			    <a href='./contact.php'>contact us</a> for more information
+			    if you are a student who like to work with a math tutor 
+			    or if you would like to get involved as a Catalyst math tutor.
+			    </p>
 				";
 		
 //				<p>
